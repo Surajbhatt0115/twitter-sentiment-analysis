@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body{
+            background: url("tw.jpg");
+     
+        }
+        #hd{
+            text-align: center;
+        }
+        .d1{
+            text-align: center;
+            border: 1px solid black;
+
+        }
+        div{
+			position: relative;
+			top:10px;
+			margin-left:600px;
+			margin-right:600px;
+			background-color: rgb(203, 88, 252);
+			padding:40px;
+			text-align:center;
+		
+		}
+		
+		#btn{
+			background-color:green;
+			color:orange;
+			border: 1px solid white;
+			border-radius:5px;
+		
+		}
+        </style>
+</head>
+<body>
+<div id="hd"><h1>Twitter Analysis</h1></div>
+    
+
+<div class="d1">  
+    <form method="get" action="/output">
+    {% csrf_token %}
+    <label for="hash">Enter Hastag</label>
+    <input type="text" name="hash" id="hash"><br /><br />
+    <input type="submit" id="btn">
+
+</form></div>
+</body>
+</html>

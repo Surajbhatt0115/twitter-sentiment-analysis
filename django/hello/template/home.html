@@ -1,0 +1,75 @@
+<!Doctype html>
+
+<head>
+
+	<title>Twitter Sentiment Analysis</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<style>
+		body{
+			background-color:aqua;
+		}
+		header{
+			position:relative;
+			text-align:center;
+			background-color:rgb(53, 129, 252);
+			padding:40px;
+			color:red;
+		
+		}
+		
+		div{
+			position: relative;
+			top:10px;
+			margin-left:0rem;
+			margin-right:0rem;
+			background-color: rgb(203, 88, 252);
+			padding:60px;
+			text-align:center;
+		
+		}
+		
+		#btn{
+			background-color:rgb(128, 62, 0);
+			color:rgb(195, 255, 0);
+			border: 1px solid white;
+			border-radius:5px;
+		
+		}
+		
+		#id1{
+			position:absolute;
+			top:60px;
+			left:500px;
+			width:50px;
+			height:50px;
+			border-radius:5px;
+		
+		
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<header id="a1"><span><img src="https://i.pinimg.com/736x/ee/af/9c/eeaf9ce3ab22ecb3904daea1b2eab04a.jpg"/></span><h1>Twitter Sentiment Analysis</h1></header>
+
+	<!--header id="a2"><span><img src="https://i.pinimg.com/736x/ee/af/9c/eeaf9ce3ab22ecb3904daea1b2eab04a.jpg"/></header-->
+
+
+	<div >
+
+		<form method="get" action="/output">
+			{% csrf_token %}
+			<label for="hash">Enter Hastag</label>
+			<input type="text" name="hash" id="hash"><br /><br />
+			<input type="submit" id="btn">
+
+		</form>
+
+	</div>
+	
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body{
+        background-color: rgb(0, 132, 255);
+    }
+    #im1,#im2{
+        border: 1px solid black;
+        height:40rem;
+        width:40rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .di{
+        text-align: center;
+    }
+    #wc,#bg{
+        text-align: center;
+    }
+    </style>
+    <title>Result</title>
+        
+</head>
+<body>
+    {% load static %}
+<div class="di">
+    <h1 id="wc">WORD CLOUD</h1><br>
+<img id="im1" src="{% static "C:\Users\SURAJ BHATT\OneDrive\Desktop\django\hello\static\image\wplot.png" %}" alt="word cloud">
+<h1 id="bg">BARGRAPH</h1>
+    <br>
+<img  id="im2" src="{% static "C:\Users\SURAJ BHATT\OneDrive\Desktop\django\hello\static\image\bplot.png" %}" alt="bargarph">
+
+<h1 id="bg">PIECHART</h1>
+    <br>
+<img  id="im3" src="{% static "C:\Users\SURAJ BHATT\OneDrive\Desktop\django\hello\static\image\piechart.png" %}" alt="piechart">
+
+    </div>
+</body>
+</html>
+
